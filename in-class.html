@@ -1,0 +1,156 @@
+<html>
+	<head>
+		<!-- CSS & jQuery for Bootstrap and jQuery    -->
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom Javascript Files -->
+		<link href="css/custom.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Website Builder</a>
+		    </div><!-- End of Nav-Header -->
+		    <form id="builder">
+		    	<ul class="nav navbar-nav">
+		    		<!-- Header -->
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Header <span class="caret"></span></a>
+			          <ul class="dropdown-menu" role="menu">
+			            <div class="form-group">
+			            	<label>Header</label>
+				          	<input type="text" id="header-input" class="form-control">
+				        </div>
+				        <div class="last form-group">
+				        	<label>Sub-header</label>
+				         	<input type="text" id="sub-header-input" class="form-control">
+				        </div>
+			          </ul>
+			        </li><!-- End Header -->
+			        <!-- Image -->
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Banner Image <span class="caret"></span></a>
+			          <ul class="dropdown-menu" role="menu">
+			            <div class="radio">
+						  <label>
+						    <input type="radio" name="optionsRadios" id="optionsRadios1" value="img/img-2.jpg" checked>
+						    <img src="img/img-2.jpg" class="img-responsive">
+						  </label>
+						</div>
+						<div class="radio">
+						  <label>
+						    <input type="radio" name="optionsRadios" id="optionsRadios2" value="img/img-3.jpg">
+						    <img src="img/img-3.jpg" class="img-responsive">
+						  </label>
+						</div>
+						<div class="last radio">
+						  <label>
+						    <input type="radio" name="optionsRadios" id="optionsRadios3" value="img/img-4.jpg">
+						    <img src="img/img-4.jpg" class="img-responsive">
+						  </label>
+						</div>
+			          </ul>
+			        </li><!-- End Image -->
+			        <!-- Second Centered Header -->
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Centered Second Header <span class="caret"></span></a>
+			          <ul class="dropdown-menu" role="menu">
+			            <div class="form-group last">
+				          	<input type="text" id="second-centered-header-input" class="form-control">
+				        </div>
+			          </ul>
+			        </li><!-- End Second Centered Header -->
+			        <!-- Body-L Text -->
+			        <li class="dropdown">
+			          	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Body-L <span class="caret"></span></a>
+			          	<ul class="dropdown-menu" role="menu">
+			          		<div class="form-group">
+				            	<label>Title</label>
+					          	<input type="text" id="body-l-title-input" class="form-control">
+					        </div>
+				            <div class="last form-group">
+				            	<label>Body</label>
+					          	<textarea  id="body-l-content-input" class="form-control"></textarea>
+					        </div>
+			          </ul>
+			        </li><!-- End Body-L Text -->
+			        <!-- Body-M Text -->
+			        <li class="dropdown">
+			          	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Body-M <span class="caret"></span></a>
+			          	<ul class="dropdown-menu" role="menu">
+			          		<div class="form-group">
+				            	<label>Title</label>
+					          	<input type="text" id="body-m-title-input" class="form-control">
+					        </div>
+				            <div class="last form-group">
+				            	<label>Body</label>
+					          	<textarea  id="body-m-content-input" class="form-control"></textarea>
+					        </div>
+			          </ul>
+			        </li><!-- End Body-M Text -->
+			        <!-- Body-R Text -->
+			        <li class="dropdown">
+			          	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Body-R <span class="caret"></span></a>
+			          	<ul class="dropdown-menu" role="menu">
+			          		<div class="form-group">
+				            	<label>Title</label>
+					          	<input type="text" id="body-r-title-input" class="form-control">
+					        </div>
+				            <div class="last form-group">
+				            	<label>Body</label>
+					          	<textarea  id="body-r-content-input" class="form-control"></textarea>
+					        </div>
+			          </ul>
+			        </li><!-- End Body-R Text -->
+			    </ul>
+			    <button type="submit" class="btn btn-success navbar-btn">Build!</button>
+		    </form>
+		  </div><!-- End of Container -->
+		</nav><!-- End of Nav -->
+
+		<div class="container-fluid content">
+			<div class="row header-container">
+				<div class="container">
+					<h1 id="header" >Main Header</h1>
+					<h2 id="sub-header">Sub title text will go here</h2>
+				</div>
+			</div>
+			<div class="row img-container">
+				<img id="banner-image" src="img/img-2.jpg" class="img-responsive">
+			</div>
+			<div class="row body-content">
+				<div class="container">
+					<div class="row below-image-header">
+						<h3 id="centered-second-header">Here is some centered content.</h3>
+					</div>
+					<div class="row column-content">
+						<div class="col-sm-4">
+							<h3 id="body-l-title" >Title</h3>
+							<p id="body-l-content" >Here goes a bunch of body text. Lets try this out and just keep the words coming and see how it makes all of us feel.</p>
+						</div>
+						<div class="col-sm-4">
+							<h3 id="body-m-title" >Title</h3>
+							<p id="body-m-content" >Here goes a bunch of body text. Lets try this out and just keep the words coming and see how it makes all of us feel.</p>
+						</div>
+						<div class="col-sm-4">
+							<h3 id="body-r-title" >Title</h3>
+							<p id="body-r-content" >Here goes a bunch of body text. Lets try this out and just keep the words coming and see how it makes all of us feel.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
